@@ -2,10 +2,10 @@
 
 java中的所有异常对象都是Throwable类或者子类的实例。Throwable有两大直接子类：
 
-- **Error：**java运行时系统的内部错误和资源耗尽错误，程序无法处理也不应该抛出这种错误。
-- **Exception：**程序需要捕获或者抛出的异常。
-  - **RuntimeException：**由于程序错误导致的异常。
-  - **非RuntimeException：**程序本身没有问题，由于外部原因导致的异常。
+- **Error**：java运行时系统的内部错误和资源耗尽错误，程序无法处理也不应该抛出这种错误。
+- **Exception**：程序需要捕获或者抛出的异常。
+  - **RuntimeException**：由于程序错误导致的异常。
+  - **非RuntimeException**：程序本身没有问题，由于外部原因导致的异常。
 
 RuntimeException和Error属于**unchecked异常**，其他异常属于**checked异常**。所有的checked的异常都需要被显式的捕获或抛出。如果异常没有在任何地方捕获，那么程序将终止执行。
 
